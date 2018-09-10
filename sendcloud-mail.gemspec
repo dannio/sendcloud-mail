@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sendcloud-mail'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2018-09-03'
   s.summary     = 'A gem to send Mail with SendCloud API'
   s.description = 'A gem to send Mail with SendCloud API'

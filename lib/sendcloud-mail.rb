@@ -30,7 +30,7 @@ module SendCloud
                                  from: from,
                                  fromName: fromName,
                                  xsmtpapi: xsmtpapi.to_json,
-                                 subject:, subject,
+                                 subject: subject,
                                  html: content,
                                  contentSummary: summary
       JSON.parse(response.to_s)['statusCode']
@@ -50,7 +50,7 @@ module SendCloud
                                  from: from,
                                  fromName: fromName,
                                  xsmtpapi: xsmtpapi.to_json,
-                                 subject:, subject,
+                                 subject: subject,
                                  templateInvokeName: invokeName,
                                  contentSummary: summary
       JSON.parse(response.to_s)['statusCode']

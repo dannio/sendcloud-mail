@@ -83,7 +83,7 @@ module SendCloud
                                   name: name,
                                   html: html,
                                   subject: subject,
-                                  templateType: type
+                                  templateType: templateType
 
       JSON.parse(response.to_s)
     end
@@ -96,7 +96,7 @@ module SendCloud
                                   name: name,
                                   html: html,
                                   subject: subject,
-                                  templateType: type
+                                  templateType: templateType
       JSON.parse(response.to_s)['statusCode']
     end
 

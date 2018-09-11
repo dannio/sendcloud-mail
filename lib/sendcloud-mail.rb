@@ -36,7 +36,7 @@ module SendCloud
       JSON.parse(response.to_s)['statusCode']
     end
 
-    def self.send_template(invokeName, from, fromName, subject, xsmtpapi, summary=nil)
+    def self.send_template(invokeName, from, fromName, xsmtpapi, subject=nil, summary=nil)
       # xsmtpapi comes in the following format:
       #{
       #  "to": ["d@163.com",'i@163.com'],

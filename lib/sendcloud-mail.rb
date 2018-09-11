@@ -81,7 +81,7 @@ module SendCloud
                                   apiKey: @mail_api_key,
                                   invokeName: invokeName,
                                   name: name,
-                                  html: content,
+                                  html: html,
                                   subject: subject,
                                   templateType: type
 
@@ -94,7 +94,7 @@ module SendCloud
                                   apiKey: @mail_api_key,
                                   invokeName: invokeName,
                                   name: name,
-                                  html: content,
+                                  html: html,
                                   subject: subject,
                                   templateType: type
       JSON.parse(response.to_s)['statusCode']

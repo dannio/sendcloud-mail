@@ -87,12 +87,12 @@ parameter `email` could be either an array of email addresses or one email addre
 #### Usage:
 Send
 ```ruby
-SendCloud::Mail.send(from, fromName, subject, xsmtpapi, content, summary)
+SendCloud::Mail.send(from, fromName, subject, xsmtpapi, content, summary=nil)
 ```
 
 Send Template
 ```ruby
-SendCloud::Mail.send_template(invokeName, from, fromName, subject, xsmtpapi, summary)
+SendCloud::Mail.send_template(invokeName, from, fromName, xsmtpapi, subject=nil, summary=nil)
 ```
 
 Get
@@ -137,7 +137,7 @@ SendCloud::Mail.send('user@example.com', 'Jerome', "Hey here's that invoice for 
 
 SendCloud::Mail.create('WelcomeTemplate', 'Welcome Template','<p>Welcome to our company, %name%!</p>', 'Welcome!', 0)
 
-SendCloud::Mail.send_template('WelcomeTemplate', 'user@example.com', 'Jerome', "Hey here's that invoice for that deal", { "to": ['dealmaker@example2.com'] }, 'Outstanding Invoice')
+SendCloud::Mail.send_template('WelcomeTemplate', 'user@example.com', 'Jerome', { "to": ['dealmaker@example2.com'] }, "Hey here's that invoice for that deal", 'Outstanding Invoice')
 ```
 
 ### Return

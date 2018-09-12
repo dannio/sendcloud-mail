@@ -145,7 +145,8 @@ SendCloud::Mail.send_template('WelcomeTemplate', 'user@example.com', 'Jerome', "
 The method returns an integer as code of response. Check the following list for details.
 
 Return Code
-200         请求成功
+200         请求成功\
+
 40001       start不能为空
 40002       start非法
 40003       limit不能为空
